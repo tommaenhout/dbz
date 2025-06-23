@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import TiltedCard from "./TiltedCard";
+
 import "./index.css";
 interface ICardDetail {
     id: string;
@@ -39,6 +40,7 @@ export interface Character {
 
 const CardDetail = ({ id }: ICardDetail) => {
   const [card, setCard] = useState<Character | null>(null);
+
   useEffect(() => {
     const fetchCard = async () => {
       const response = await fetch(`https://dragonball-api.com/api/characters/${id}`);

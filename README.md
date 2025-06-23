@@ -20,6 +20,8 @@ This project leverages the following technologies:
 - **Module Federation**: Enables sharing of modules across multiple applications
 - **Tailwind CSS**: Utility-first CSS framework for styling components
 - **React Router**: Standard routing library for React applications
+- **ReactBits**: Animation library for implementing UI animations
+- **Cypress**: JavaScript end-to-end testing framework
 
 ## Running the Application
 
@@ -57,6 +59,16 @@ Alternatively, you can run each micro-frontend individually using NPM:
    # In terminal 4
    cd mf_card_detail && npm start
    ```
+
+## Testing
+
+### Running E2E Tests with Cypress
+
+To run end-to-end tests with Cypress:
+
+```bash
+cd mf_dbz && npm run e2e
+```
 
 ## Port Configuration
 - mf_dbz: http://localhost:8080
