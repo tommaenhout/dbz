@@ -10,6 +10,17 @@ This project is a micro-frontend architecture application built around Dragon Ba
 
 Each micro-frontend is containerized and can be run independently or as part of the complete application.
 
+## Technical Stack
+
+This project leverages the following technologies:
+
+- **Rspack**: High-performance JavaScript bundler used for building the application
+- **React**: JavaScript library for building user interfaces in host and some micro-frontends
+- **Vue.js**: Progressive JavaScript framework used in the cards micro-frontend
+- **Module Federation**: Enables sharing of modules across multiple applications
+- **Tailwind CSS**: Utility-first CSS framework for styling components
+- **React Router**: Standard routing library for React applications
+
 ## Running the Application
 
 ### Using Docker (Recommended)
