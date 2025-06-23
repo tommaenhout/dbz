@@ -22,5 +22,11 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - "8082:8082"
+  mf_card_detail:
+    build: 
+      context: mf_card_detail
+      dockerfile: ./Dockerfile
+    ports:
+      - "8083:8083"
     
   
