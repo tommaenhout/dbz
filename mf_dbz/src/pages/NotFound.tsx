@@ -1,12 +1,13 @@
-import Magnet from "../components/Magnet";
 import { useNavigate } from "react-router";
-import FuzzyText from "../components/FuzzyText";
+import { lazy, Suspense } from "react";
+const FuzzyText = lazy(() => import("../components/FuzzyText"));
 
 const NotFound = () => {
   const navigate = useNavigate();
   return (
     <div className="flex w-fit mx-auto flex-col items-center justify-center mt-20 gap-20">
       <div className="flex flex-col text-center justify-center items-center gap-2">
+        <Suspense fallback={<div>Loading...</div>}>
         <FuzzyText
           fontWeight={200}
           color="black"
@@ -28,6 +29,7 @@ const NotFound = () => {
         >
           not found
         </FuzzyText>
+        </Suspense>
       </div>
       <button
         onClick={() => navigate("/")}

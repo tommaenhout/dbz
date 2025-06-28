@@ -1,6 +1,6 @@
 <template>
     <!-- Removed test box -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+  <div v-if="characters.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
     <div
       v-for="character in characters"
       :key="character.id"
@@ -43,6 +43,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div v-else class="flex justify-center items-center min-h-[200px]">
+    <p>Loading...</p>
   </div>
 </template>
 
